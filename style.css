@@ -55,6 +55,8 @@
   width: 100%;
 
   background-color: var(--light-color);
+
+  overflow-y: hidden;
 }
 
 .navigation__list {
