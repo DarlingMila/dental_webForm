@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Dental</title>
+</head>
+<body class="body">
+  
+  <!-- блок загрузки, блокирует весь лист -->
+  <div class="protectionScreen"></div>
+  
+  <!-- <select name="pageTitleSelection" class="pageTitleSelection">
+    <option value="Лікування">Лікування</option>
+    <option value="Щоденник">Щоденник</option>
+  </select> -->
+
+  <nav class="navigation">
+    <ul class="navigation__list">
+      <li data-value="Щоденник" class="navigation__item">Щоденник</li>
+      <li data-value="Лікування" class="navigation__item navigation__item_active">Лікування</li>
+      <li data-value="Лист 3" class="navigation__item">Лист 3</li>
+      <li data-value="Лист 4" class="navigation__item">Лист 4</li>
+    </ul>
+  </nav>
+
+  <div class="contentWrap">
+
+
+    <!-- всплывающий блок с подтверждением 
+    выбора до отправки данных на сервер -->
+    <div class="submitScreen hide">
+
+      <div class="submitScreen__main"></div>
+
+      <div class="submitScreen__btnWrapper">
+        <button class="btn btn_small btn_return">Вернуться</button>
+        <button class="btn btn_small btn_submit">Подтвердить</button>
+      </div>
+
+    </div>
+
+    <!-- блок Лікування-->
+    <div data-listname="Лікування" class="serviceScreen">
+      <div class="serviceScreen__main"></div>
+
+      <button class="btn btn_confirm hide">Подтвердить</button>
+    </div>
+
+    <!-- блок Щоденник-->
+    <div data-listname="Щоденник" class="patientCardScreen hide">
+      <div class="patientCardScreen__main">Щоденник</div>
+    </div>
+
+    <!-- блок 3-->
+    <div data-listname="Лист 3" class="list3Screen hide">
+      <div class="list3Screen__main">Лист 3</div>
+    </div>
+
+    <!-- блок 4-->
+    <div data-listname="Лист 4" class="list4Screen hide">
+      <div class="list4Screen__main">Лист 4</div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
