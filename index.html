@@ -14,12 +14,8 @@
   
   <!-- блок загрузки, блокирует весь лист -->
   <div class="protectionScreen"></div>
-  
-  <!-- <select name="pageTitleSelection" class="pageTitleSelection">
-    <option value="Лікування">Лікування</option>
-    <option value="Щоденник">Щоденник</option>
-  </select> -->
 
+  <!-- навигация - выбор листов -->
   <nav class="navigation">
     <ul class="navigation__list">
       <li data-value="Щоденник" class="navigation__item">Щоденник</li>
@@ -31,25 +27,24 @@
 
   <div class="contentWrap">
 
-
     <!-- всплывающий блок с подтверждением 
     выбора до отправки данных на сервер -->
     <div class="submitScreen hide">
-
       <div class="submitScreen__main"></div>
 
       <div class="submitScreen__btnWrapper">
         <button class="btn btn_small btn_return">Вернуться</button>
         <button class="btn btn_small btn_submit">Подтвердить</button>
       </div>
-
     </div>
 
     <!-- блок Лікування-->
     <div data-listname="Лікування" class="serviceScreen">
       <div class="serviceScreen__main"></div>
-
-      <button class="btn btn_confirm hide">Подтвердить</button>
+      
+      <div class="serviceScreen__btnWrapper">
+        <button class="btn btn_confirm hide">Подтвердить</button>
+      </div>
     </div>
 
     <!-- блок Щоденник-->

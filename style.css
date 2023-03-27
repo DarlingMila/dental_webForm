@@ -133,10 +133,6 @@
   margin-bottom: 10px;
 }
 
-.block:last-child{
-  margin-bottom: 30px;
-}
-
 .bigItem {
   margin-bottom: 5px;
   padding: 5px;
@@ -239,8 +235,11 @@ input:checked + .customInput {
   opacity: 1;
 }
 
-.btnWrapper {
-  margin: 0;
+.serviceScreen__btnWrapper {
+  margin: 20px 0 0;
+  padding: 10px 20px;
+  max-width: var(--page-width);
+
   background-color: white;
 }
 
@@ -382,7 +381,7 @@ input:checked + .customInput {
 }
 
 .submitScreen__warningMessage {
-  margin: 20px 0;
+  margin-top: 40px;
 
   border: 2px solid var(--dark-color);
   border-radius: 3px;
